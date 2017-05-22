@@ -25,6 +25,21 @@ $("#burger").css('display','block');
 $( "#cross" ).css( "display", "none" );
  
 }
+function afficher_search() {
+ 
+$(".clic_search").css("display", "block" );
+$("#search2").css('display','block');
+$("#search").css('display','none');
+ 
+}
+
+function cache_search() {
+ 
+$(".clic_search").css("display", "none" );
+$("#search").css('display','block');
+$("#search2").css('display','none');
+ 
+}
 </script>
 </head>
 
@@ -42,12 +57,21 @@ $( "#cross" ).css( "display", "none" );
 					<li>FAIRE UN DON</li>
 					<li>ENGLISH</li>
 					<li>DEUTHSCH</li>
-					<li><img src="images/search.png" alt=""></li>
+					<li ><button onclick="afficher_search()" id="search"><img src="images/search.png" alt=""></button></li>
+					<li ><button onclick="cache_search()" id="search2" style="display:none"><img src="images/search.png" alt=""></button></li>
 					<li><button onclick="afficher_cross()" id="burger"><img src="images/menu-button.png" alt=""></button></li>
 					<li><button onclick="afficher_burger()" id="cross" style="display : none"><img src="images/multiply.png" alt=""></button></li>
 				</ul>
 			</div>
 		</header>
+		<section class="row search clic_search">
+			<form>
+			  <div class="form-group col-md-offset-2 col-md-8">
+				<label for="exampleInputEmail1"><h3>Recherchez à travers nos 11 257 adresses et 61 652 photos :</h3></label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="indiquez une adresse, un nom de rue ou de bâtiment">
+			  </div>
+			</form>
+		</section>
 		<!--first section-->
 		<section class="row texte1">
 			<div class="col-md-8">

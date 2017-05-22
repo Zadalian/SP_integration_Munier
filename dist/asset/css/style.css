@@ -33,6 +33,13 @@ body {
   .navbar-nav > li button {
     background-color: #fafafa;
     border: none; }
+  .navbar-nav > li #search {
+    width: 130px;
+    padding-bottom: 30px; }
+  .navbar-nav > li #search2 {
+    width: 130px;
+    padding-bottom: 33px;
+    background-color: #a65447; }
 
 /*Section 1 */
 .texte1 {
@@ -52,6 +59,9 @@ body {
     color: #34414a; }
 
 /* Section recherche*/
+.clic_search {
+  display: none; }
+
 .search {
   background-color: #a65447;
   height: 167px;
