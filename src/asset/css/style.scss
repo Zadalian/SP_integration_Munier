@@ -47,7 +47,19 @@ background-color:$white-three;
 	background-color::$white-three;
 	border:none;
 	}
+	
+	#search{
+	width:130px;
+	padding-bottom:30px;
+	}
+	#search2{
+	width:130px;
+	padding-bottom:33px;
+	background-color : $earth;
+	}
 }
+
+
 
 /*Section 1 */
 .texte1{
@@ -72,6 +84,10 @@ background-color:$white-three;
 }
 
 /* Section recherche*/
+
+.clic_search{
+	display:none;
+}
 
 .search{
 	background-color:$earth;
