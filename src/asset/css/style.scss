@@ -7,6 +7,8 @@ $white-two:#ebebeb;
 body{
 background-color:$white-three;
 width:1400px;
+margin-left:auto;
+margin-right:auto;
 }
 
 .container-fluid{
@@ -17,6 +19,8 @@ background-color:$white-three;
 
 .container {
     width: 1280px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .row {
@@ -153,7 +157,7 @@ background-color:$white-three;
 	}
 }
 .texteillustration{
-	margin-top:45px;
+	margin-top:30px;
 	font-family: 'Open Sans', sans-serif;
 
 	img{

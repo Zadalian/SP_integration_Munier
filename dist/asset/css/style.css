@@ -1,13 +1,17 @@
 body {
   background-color: #fafafa;
-  width: 1400px; }
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .container-fluid {
   width: 1400px;
   background-color: #fafafa; }
 
 .container {
-  width: 1280px; }
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .row {
   margin-right: 0;
@@ -111,7 +115,7 @@ body {
     color: #34414a; }
 
 .texteillustration {
-  margin-top: 45px;
+  margin-top: 30px;
   font-family: 'Open Sans', sans-serif; }
   .texteillustration img {
     width: 248px;
