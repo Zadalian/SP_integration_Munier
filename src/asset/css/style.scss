@@ -68,6 +68,8 @@ background-color:$white-three;
 /*Section 1 */
 .texte1{
 	background-color:#FFF;
+	position:relative;
+	z-index:1;
 
 	a{
 	color:red;
@@ -91,6 +93,10 @@ background-color:$white-three;
 
 .clic_search{
 	display:none;
+	position : absolute;
+	top:0;
+	left:0;
+	z-index:2;
 }
 
 .search{
@@ -99,6 +105,7 @@ background-color:$white-three;
 	text-align:center;
 	line-height:80px;
 	vertical-align:center;
+	width:100%;
 
 	h3{
 	font-size:25px;

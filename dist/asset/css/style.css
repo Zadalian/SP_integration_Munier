@@ -47,7 +47,9 @@ body {
 
 /*Section 1 */
 .texte1 {
-  background-color: #FFF; }
+  background-color: #FFF;
+  position: relative;
+  z-index: 1; }
   .texte1 a {
     color: red;
     font-family: 'Open Sans', sans-serif; }
@@ -64,14 +66,19 @@ body {
 
 /* Section recherche*/
 .clic_search {
-  display: none; }
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; }
 
 .search {
   background-color: #a65447;
   height: 167px;
   text-align: center;
   line-height: 80px;
-  vertical-align: center; }
+  vertical-align: center;
+  width: 100%; }
   .search h3 {
     font-size: 25px;
     color: #ebebeb;

@@ -11,36 +11,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SP Integration Munier</title>
-	<script>
-	function afficher_cross() {
- 
-$("#burger").css('display','none');
-$( "#cross" ).css( "display", "block" );
- 
-}
+	<script type="text/javascript" src="js/menu_search.js"></script>
 
-	function afficher_burger() {
- 
-$("#burger").css('display','block');
-$( "#cross" ).css( "display", "none" );
- 
-}
-function afficher_search() {
- 
-$(".clic_search").css("display", "block" );
-$("#search2").css('display','block');
-$("#search").css('display','none');
- 
-}
-
-function cache_search() {
- 
-$(".clic_search").css("display", "none" );
-$("#search").css('display','block');
-$("#search2").css('display','none');
- 
-}
-</script>
 </head>
 
 <body>
@@ -64,16 +36,16 @@ $("#search2").css('display','none');
 				</ul>
 			</div>
 		</header>
-		<section class="row search clic_search">
-			<form>
-			  <div class="form-group col-md-offset-2 col-md-8">
-				<label for="exampleInputEmail1"><h3>Recherchez à travers nos 11 257 adresses et 61 652 photos :</h3></label>
-				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="indiquez une adresse, un nom de rue ou de bâtiment">
-			  </div>
-			</form>
-		</section>
 		<!--first section-->
 		<section class="row texte1">
+			<section class="row search clic_search">
+				<form>
+				  <div class="form-group col-md-offset-2 col-md-8">
+					<label for="exampleInputEmail1"><h3>Recherchez à travers nos 11 257 adresses et 61 652 photos :</h3></label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="indiquez une adresse, un nom de rue ou de bâtiment">
+				  </div>
+				</form>
+			</section>
 			<div class="col-md-8">
 				<img src="images/image-en-avant.png" alt="archi wiki">
 			</div>
