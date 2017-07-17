@@ -1,43 +1,102 @@
 <html>
-<head>
-	<link href="public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<script src="public/bootstrap/js/jquery-3.1.1.js"></script>
-	<script src="public/bootstrap/js/bootstrap.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="dist/asset/css/style.min.css">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SP Integration Munier</title>
-	<script type="text/javascript" src="js/menu_search.js"></script>
+	<head>
+		<link href="public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<script src="public/bootstrap/js/jquery-3.1.1.js"></script>
+		<script src="public/bootstrap/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="dist/asset/css/style.min.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SP Integration Munier</title>
+		<script type="text/javascript" src="js/menu_search.js"></script>
+	</head>
 
-</head>
-
-<body>
-	<div class="container">
-	<!--Header -->
-		<header class="row header">
-			<div class="col-md-3 logo">
-				<img src="images/logo.png" alt="logo archi wiki" height="62px">
-			</div>
-			<div class="col-md-9">
-				<ul class="nav navbar-nav">
-					<li>L'ASSOCIATION</li>
-					<li>OPEN DATA</li>
-					<li>FAIRE UN DON</li>
-					<li>ENGLISH</li>
-					<li>DEUTHSCH</li>
-					<li ><button onclick="afficher_search()" id="search"><img src="images/search.png" alt=""></button></li>
-					<li ><button onclick="cache_search()" id="search2" style="display:none"><img src="images/search.png" alt=""></button></li>
-					<li><button onclick="afficher_cross()" id="burger"><img src="images/menu-button.png" alt=""></button></li>
-					<li ><button onclick="afficher_burger()" id="cross"><img src="images/multiply.png" alt=""></button></li>
+	<body>
+		<div class="container">
+		<!--Header -->
+			<header class="row header">
+				<div class="col-md-2 col-xs-10 logo">
+					<img src="images/logo.png" class="imagedesktop"alt="logo archi wiki" height="62px">
+					<img src="images/logo-footer.png" class="imagemobile" alt="logo archi wiki" class="logo-footer">
+				</div>
+				<div class="menu-mobile visible-xs col-xs-2">
+					<img src="images/menu-button.png" alt="" >
+				</div>
+				<div class="col-md-10">
+					<ul class="menuflex">
+						<li>L'ASSOCIATION</li>
+						<li>OPEN DATA</li>
+						<li>FAIRE UN DON</li>
+						<li>ENGLISH</li>
+						<li>DEUTHSCH</li>
+						<li ><button onclick="afficher_search()" id="search"><img src="images/search.png" alt=""></button></li>
+						<li ><button onclick="cache_search()" id="search2" style="display:none"><img src="images/search.png" alt=""></button></li>
+						<li><button onclick="afficher_cross()" id="burger"><img src="images/menu-button.png" alt=""></button></li>
+						<li ><button onclick="afficher_burger()" id="cross"><img src="images/multiply.png" alt=""></button></li>
+					</ul>
+				</div>
+			</header>
+			<section class="row">
+				<ul class="searchmenumobile">
+					<li>L'association</li>
+					<li>Contribuer au site</li>
+					<li>Open Data</li>
+					<li>Faire un don</li>
+					<li>English</li>
+					<li>Deutsch</li>
+					<li>Se connecter</li>
 				</ul>
-			</div>
-		</header>
-		<!--first section-->
-		<section class="row texte1">
-			<section class="row search clic_search">
+			</section>
+			<!--first section-->
+			<section class="row texte1">
+				<section class="row search clic_search">
+					<form>
+					  <div class="form-group col-md-offset-2 col-md-8">
+						<label for="exampleInputEmail1"><h3>Recherchez à travers nos 11 257 adresses et 61 652 photos :</h3></label>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="indiquez une adresse, un nom de rue ou de bâtiment">
+					  </div>
+					</form>
+				</section>
+				<section class="row menu">
+					<div class="menu-colonne1 col-md-2">
+						<h4>L’association</h4>
+						<ul>
+							<li>Devenir membre</li>
+							<li>Faire un don</li>
+							<li>Revue de presse</li>
+							<li>Nos sources</li>
+							<li>Nos donateurs</li>
+						</ul>
+					</div>
+					<div class="menu-colonne2 col-md-offset-1 col-md-3">
+						<h4>Aide à la contribution</h4>
+						<ul>
+							<li>Consulter l’historique de la page</li>
+							<li>Aide à la contribution</li>
+						</ul>
+					</div>
+					<div class="menu-colonne3 col-md-offset-4 col-md-2">
+						<img src="images/user.png" class="img-responsive" alt="user profile">
+						<ul>
+							<li>Se connecter</li>
+							<li>S'inscrire</li>
+						</ul>
+					</div>
+				</section>
+				<div class="col-md-8">
+					<img src="images/image-en-avant.png" class="img-responsive" alt="archi wiki">
+				</div>
+				<div class="col-md-4 ">
+					<h3>lumière sur ...</h3>
+					<h3>36, rue du marché au poisson</h3>
+					<span><a href="#" title="Strasbourg">France > Strasbourg</a></span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+					<span><a href="#" title="decouvir cette fiche">Découvrir cette fiche</a></span>
+				</div>
+			</section>
+			<section class="row search">
 				<form>
 				  <div class="form-group col-md-offset-2 col-md-8">
 					<label for="exampleInputEmail1"><h3>Recherchez à travers nos 11 257 adresses et 61 652 photos :</h3></label>
@@ -45,207 +104,164 @@
 				  </div>
 				</form>
 			</section>
-			<section class="row menu">
-				<div class="menu-colonne1 col-md-2">
-					<h4>L’association</h4>
-					<ul>
-						<li>Devenir membre</li>
-						<li>Faire un don</li>
-						<li>Revue de presse</li>
-						<li>Nos sources</li>
-						<li>Nos donateurs</li>
-					</ul>
+			<section class="row texte2">
+				<div class="col-md-5 cestqui">
+					<h3>Archi-Wiki, c’est qui ?</h3>
+					<p>Archi-Wiki est un site collaboratif fonctionnant sur le principe du wiki : offrir un contenu objectif et vérifiable, librement réutilisable, que chacun peut enrichir, modifier et améliorer.</p>
+					<p>L’objectif est de recenser les bâtiments et lieux d’une ville, en retraçant leur histoire à travers la date de construction, le nom de l’architecte, les transformations successives, ainsi que de nombreuses photos.</p>
+					<p>Archi-wiki a ainsi l’ambition de devenir une sorte de Wikipédia de l’architecture, en constituant une base de données en perpétuelle évolution.</p>
+					<p><a href="#" title="Pour contribuer, inscrivez-vous !">Pour contribuer, inscrivez-vous !</a></p>
 				</div>
-				<div class="menu-colonne2 col-md-offset-1 col-md-3">
-					<h4>Aide à la contribution</h4>
-					<ul>
-						<li>Consulter l’historique de la page</li>
-						<li>Aide à la contribution</li>
-					</ul>
-				</div>
-				<div class="menu-colonne3 col-md-offset-4 col-md-2">
-					<img src="images/user.png" alt="user profile">
-					<ul>
-						<li>Se connecter</li>
-						<li>S'inscrire</li>
-					</ul>
-				</div>
-			</section>
-			<div class="col-md-8">
-				<img src="images/image-en-avant.png" alt="archi wiki">
-			</div>
-			<div class="col-md-4 ">
-				<h3>lumière sur ...</h3>
-				<h3>36, rue du marché au poisson</h3>
-				<span><a href="#" title="Strasbourg">France > Strasbourg</a></span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-				<span><a href="#" title="decouvir cette fiche">Découvrir cette fiche</a></span>
-			</div>
-		</section>
-		<section class="row search">
-			<form>
-			  <div class="form-group col-md-offset-2 col-md-8">
-				<label for="exampleInputEmail1"><h3>Recherchez à travers nos 11 257 adresses et 61 652 photos :</h3></label>
-				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="indiquez une adresse, un nom de rue ou de bâtiment">
-			  </div>
-			</form>
-		</section>
-		<section class="row texte2">
-			<div class="col-md-5 cestqui">
-				<h3>Archi-Wiki, c’est qui ?</h3>
-				<p>Archi-Wiki est un site collaboratif fonctionnant sur le principe du wiki : offrir un contenu objectif et vérifiable, librement réutilisable, que chacun peut enrichir, modifier et améliorer.</p>
-				<p>L’objectif est de recenser les bâtiments et lieux d’une ville, en retraçant leur histoire à travers la date de construction, le nom de l’architecte, les transformations successives, ainsi que de nombreuses photos.</p>
-				<p>Archi-wiki a ainsi l’ambition de devenir une sorte de Wikipédia de l’architecture, en constituant une base de données en perpétuelle évolution.</p>
-				<p><a href="#" title="Pour contribuer, inscrivez-vous !">Pour contribuer, inscrivez-vous !</a></p>
-			</div>
-			<div class="col-md-7 illustration">
-				<div class="row titreillustration">
-					<div class="col-md-offset-1 col-md-8">
-						<h3>Dernière actualité de l’association : </br>Ode à la création, appel à la contribution</h3>
-					</div>
-				</div>
-				<div class="row texteillustration">
-					<div class="col-md-5">
-						<img src="images/illustration.png" alt="illustration">
-					</div>
-					<div class="col-md-7">
-						<p>Ce qui nous intéresse ce n'est pas ce qui existe mais ce qui n'existe pas. Les bibliothèques sont remplies de livres, pourtant ce qui reste à écrire est infiniment plus important. Face à la matérialité du monde c'est pourtant le vide qui est bien plus immense et infini, source de création. Les chercheurs publient, trouvent et donnent de nouvelles pistes qui sont autant de recherches qui posent d'autres questions. Ainsi la quête de connaissance serait insatiable.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="row titre">
-			<div class="col-md-4">
-				<h3>Dernières modifications</h2>
-			</div>
-			<div class="col-md-offset-4 col-md-4">
-				<h3>Derniers commentaires</h3>
-			</div>
-		</section>
-		<div class="row">
-			<section class="col-md-8">
-				<div class="row modification_inline">
-					<div class="col-md-6 imagemodification">
-						<img src="images/photo_modification.png" alt="batiment">
-					</div>
-					<div class="col-md-5 textemodification">
-						<h3>36 rue Aubry-et-Rau</h3>
-						<a href="#" title="Strasbourg">France  >  Strasbourg</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris non dolor eleifend, vulputate nisi vitae, posuere eros.</p>
-						<a href="#" title="consulter le commentaire">Consulter le commentaire ></a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-5 modification_vertical" id="1">
-						<img src="images/photo_modification_vertical.png" width="347px" alt="batiment">
-						<div class="texte_modification_vertical">
-							<h3>36 rue Aubry-et-Rau</h3>
-							<a href="#" title="Strasbourg">France  >  Strasbourg</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris non dolor eleifend, vulputate nisi vitae, posuere eros.</p>
-							<a href="#" titre="consulter le commentaire">Consulter le commentaire ></a>
+				<div class="col-md-7 illustration">
+					<div class="row titreillustration">
+						<div class="col-md-offset-1 col-md-8">
+							<h3>Dernière actualité de l’association : </br>Ode à la création, appel à la contribution</h3>
 						</div>
 					</div>
-					<div class="col-md-offset-1 col-md-5 modification_vertical" id="2">
-						<img src="images/photo_modification_vertical.png" width="347px" alt="batiment">
-						<div class="texte_modification_vertical">
+					<div class="row texteillustration">
+						<div class="col-md-5">
+							<img src="images/illustration.png" class="img-responsive" alt="illustration">
+						</div>
+						<div class="col-md-7">
+							<p>Ce qui nous intéresse ce n'est pas ce qui existe mais ce qui n'existe pas. Les bibliothèques sont remplies de livres, pourtant ce qui reste à écrire est infiniment plus important. Face à la matérialité du monde c'est pourtant le vide qui est bien plus immense et infini, source de création. Les chercheurs publient, trouvent et donnent de nouvelles pistes qui sont autant de recherches qui posent d'autres questions. Ainsi la quête de connaissance serait insatiable.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="row">
+				<section class="col-md-8">
+					<section class="row titre">
+						<div class="col-md-8">
+							<h3>Dernières modifications</h3>
+						</div>
+					</section>
+					<div class="row modification_inline">
+						<div class="col-md-6 imagemodification">
+							<img src="images/photo_modification.png" class="img-responsive" alt="batiment">
+						</div>
+						<div class="col-md-5 textemodification">
 							<h3>36 rue Aubry-et-Rau</h3>
 							<a href="#" title="Strasbourg">France  >  Strasbourg</a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris non dolor eleifend, vulputate nisi vitae, posuere eros.</p>
 							<a href="#" title="consulter le commentaire">Consulter le commentaire ></a>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-5 modification_vertical" id="3">
-						<img src="images/photo_modification_vertical.png" width="347px" alt="batiment">
-						<div class="texte_modification_vertical">
-							<h3>36 rue Aubry-et-Rau</h3>
-							<a href="#" alt="">France  >  Strasbourg</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris non dolor eleifend, vulputate nisi vitae, posuere eros.</p>
-							<a href="#" title="consulterle commentaire">Consulter le commentaire ></a>
+					<div class="row">
+						<div class="col-md-5 modification_vertical" id="1">
+							<img src="images/photo_modification_vertical.png" class="img-responsive" width="347px" alt="batiment">
+							<div class="texte_modification_vertical">
+								<h3>36 rue Aubry-et-Rau</h3>
+								<a href="#" title="Strasbourg">France  >  Strasbourg</a>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris non dolor eleifend, vulputate nisi vitae, posuere eros.</p>
+								<a href="#" titre="consulter le commentaire">Consulter le commentaire ></a>
+							</div>
+						</div>
+						<div class="col-md-offset-1 col-md-5 modification_vertical" id="2">
+							<img src="images/photo_modification_vertical.png" width="347px" alt="batiment">
+							<div class="texte_modification_vertical">
+								<h3>36 rue Aubry-et-Rau</h3>
+								<a href="#" title="Strasbourg">France  >  Strasbourg</a>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris non dolor eleifend, vulputate nisi vitae, posuere eros.</p>
+								<a href="#" title="consulter le commentaire">Consulter le commentaire ></a>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-offset-1 col-md-5 modification_vertical" id="4">
-						<img src="images/photo_modification_vertical.png" width="347px" alt="batiment">
-						<div class="texte_modification_vertical">
-							<h3>36 rue Aubry-et-Rau</h3>
+					<div class="row">
+						<div class="col-md-5 modification_vertical" id="3">
+							<img src="images/photo_modification_vertical.png" class="img-responsive" width="347px" alt="batiment">
+							<div class="texte_modification_vertical">
+								<h3>36 rue Aubry-et-Rau</h3>
+								<a href="#" alt="">France  >  Strasbourg</a>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris non dolor eleifend, vulputate nisi vitae, posuere eros.</p>
+								<a href="#" title="consulterle commentaire">Consulter le commentaire ></a>
+							</div>
+						</div>
+						<div class="col-md-offset-1 col-md-5 modification_vertical" id="4">
+							<img src="images/photo_modification_vertical.png" class="img-responsive" width="347px" alt="batiment">
+							<div class="texte_modification_vertical">
+								<h3>36 rue Aubry-et-Rau</h3>
+								<a href="#" alt="">France  >  Strasbourg</a>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris non dolor eleifend, vulputate nisi vitae, posuere eros.</p>
+								<a href="#" title="consulter le commentaire">Consulter le commentaire ></a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<aside class="col-md-4">
+						<section class="row titre">
+						<div class="col-md-12">
+							<h3>Derniers commentaires</h3>
+						</div>
+					</section>
+					<div class="row commentaire">
+						<div class="col-md-offset-1 col-md-10">
+							<h4>36 rue Aubry-et-Rau</h4>
 							<a href="#" alt="">France  >  Strasbourg</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris non dolor eleifend, vulputate nisi vitae, posuere eros.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi…</p>
 							<a href="#" title="consulter le commentaire">Consulter le commentaire ></a>
 						</div>
 					</div>
+					<div class="row commentaire">
+						<div class="col-md-offset-1 col-md-10 ">
+							<h4>36 rue Aubry-et-Rau</h4>
+							<a href="#" title="Strasbourg">France  >  Strasbourg</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi…</p>
+							<a href="#" title="consulter le commentaire">Consulter le commentaire ></a>
+						</div>
+					</div>
+					<div class="row commentaire">
+						<div class="col-md-offset-1 col-md-10">
+							<h4>36 rue Aubry-et-Rau</h4>
+							<a href="#" title="Strasbourg">France  >  Strasbourg</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi…</p>
+							<a href="#" alt="">Consulter le commentaire ></a>
+						</div>
+					</div>
+					<div class="row commentaire">
+						<div class="col-md-offset-1 col-md-10">
+							<h4>36 rue Aubry-et-Rau</h4>
+							<a href="#" title="Strasbourg">France  >  Strasbourg</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi…</p>
+							<a href="#" title="consulter le commentaire">Consulter le commentaire ></a>
+						</div>
+					</div>
+					<div class="row commentaire">
+						<div class="col-md-offset-1 col-md-10">
+							<h4>36 rue Aubry-et-Rau</h4>
+							<a href="#" title="Strasbourg">France  >  Strasbourg</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi…</p>
+							<a href="#" title="">Consulter le commentaire ></a>
+						</div>
+					</div>
+				</aside>
+			</div>
+			<section class="row section_rectangle">
+				<div class="rectangle col-md-offset-2 col-md-4">
+					<p>Toutes les dernières modifications</p>
+				</div>
+				<div class="rectangle col-md-offset-2 col-md-4">
+					<p>Toutes les dernières modifications</p>
 				</div>
 			</section>
-			<aside class="col-md-4">
-				<div class="row commentaire">
-					<div class="col-md-offset-1 col-md-10">
-						<h4>36 rue Aubry-et-Rau</h4>
-						<a href="#" alt="">France  >  Strasbourg</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi…</p>
-						<a href="#" title="consulter le commentaire">Consulter le commentaire ></a>
-					</div>
+			<footer class="row">
+				<div class="col-md-offset-1 col-md-2 colonne1">
+					<img src="images/logo-footer.png" class="img-responsive" alt="logo archi wiki" class="logo-footer">
+					<ul class="nav-footer">
+						<li>Nous contacter</li>
+						<li>Foire aux questions</li>
+						<li>Mentions légales</li>
+					<ul>
 				</div>
-				<div class="row commentaire">
-					<div class="col-md-offset-1 col-md-10 ">
-						<h4>36 rue Aubry-et-Rau</h4>
-						<a href="#" title="Strasbourg">France  >  Strasbourg</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi…</p>
-						<a href="#" title="consulter le commentaire">Consulter le commentaire ></a>
-					</div>
+				<div class="col-md-offset-1 col-md-4 colonne2">
+					<h5>Archi-Wiki est un projet financé et soutenu par :</h5>
+					<p>Prévoir logo des partenaires, en défausse</p>
 				</div>
-				<div class="row commentaire">
-					<div class="col-md-offset-1 col-md-10">
-						<h4>36 rue Aubry-et-Rau</h4>
-						<a href="#" title="Strasbourg">France  >  Strasbourg</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi…</p>
-						<a href="#" alt="">Consulter le commentaire ></a>
-					</div>
+				<div class="col-md-offset-1 col-md-2 colonne3 ">
+					<p class="rectangle-footer">@archi-strasbourg</p>
+					<p class="rectangle-footer">Archi.Strasbourg</p>
+					<p class="rectangle-footer">archi_strasbourg</p>
 				</div>
-				<div class="row commentaire">
-					<div class="col-md-offset-1 col-md-10">
-						<h4>36 rue Aubry-et-Rau</h4>
-						<a href="#" title="Strasbourg">France  >  Strasbourg</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi…</p>
-						<a href="#" title="consulter le commentaire">Consulter le commentaire ></a>
-					</div>
-				</div>
-				<div class="row commentaire">
-					<div class="col-md-offset-1 col-md-10">
-						<h4>36 rue Aubry-et-Rau</h4>
-						<a href="#" title="Strasbourg">France  >  Strasbourg</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat urna ut augue mattis, vel interdum tortor congue. Nam nec eros hendrerit, ullamcorper lacus ut, lobortis nisi…</p>
-						<a href="#" title="">Consulter le commentaire ></a>
-					</div>
-				</div>
-			</aside>
+			</footer>
 		</div>
-		<section class="row section_rectangle">
-			<div class="rectangle col-md-offset-2 col-md-4">
-				<p>Toutes les dernières modifications</p>
-			</div>
-			<div class="rectangle col-md-offset-2 col-md-4">
-				<p>Toutes les dernières modifications</p>
-			</div>
-		</section>
-		<footer class="row">
-			<div class="col-md-offset-1 col-md-2 colonne1">
-				<img src="images/logo-footer.png" alt="logo archi wiki" class="logo-footer">
-				<ul class="nav-footer">
-					<li>Nous contacter</li>
-					<li>Foire aux questions</li>
-					<li>Mentions légales</li>
-				<ul>
-			</div>
-			<div class="col-md-offset-1 col-md-4 colonne2">
-				<h5>Archi-Wiki est un projet financé et soutenu par :</h5>
-				<p>Prévoir logo des partenaires, en défausse</p>
-			</div>
-			<div class="col-md-offset-1 col-md-2 colonne3">
-				<p class="rectangle-footer">@archi-strasbourg</p>
-				<p class="rectangle-footer">Archi.Strasbourg</p>
-				<p class="rectangle-footer">archi_strasbourg</p>
-			</div>
-		</footer>
-	</div>
-</body>
+	</body>
 </html>
